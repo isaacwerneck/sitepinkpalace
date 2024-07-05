@@ -1,0 +1,272 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --darkpink: #ff0087;
+    --white: #ffffff;
+    --pink: #ff81d3;
+  }
+
+header {
+    background-color: var(--pink);
+    padding: 20px 0;
+    width: 100%;
+    height: 500px;
+}
+
+.logo {  
+    width:160 ;
+    height: 160; 
+    margin-left: 20; 
+    overflow: hidden;
+ }
+
+ nav {
+  width: 100%;
+  height: 125px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+  position: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+  color: var(--darkpink);
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: bold;
+}
+
+nav a:hover{
+  text-decoration: none;
+  color: var(--darkpink);
+  font-weight: bold;
+}
+
+nav ul button {
+  border: 2px solid var(--white);
+  background: transparent;
+  padding: 8px 40px;
+  cursor: pointer;
+  margin-right: 20px;
+  color: var(--white);
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+nav ul button:hover {
+  transition: background, color 0.6s;
+  background: var(--white);
+  color: #ff0087;
+}
+
+
+ body {
+  background-color: var(--darkpink);
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.banner .header-block {
+    max-width: 1000px;
+    min-width: 300px;
+    margin: 0 auto;
+    height: 450px;
+    background: var(--white);
+    border-radius: 8px;
+    box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 10;
+    padding: 10px;
+  }
+
+  .merch {
+    max-width: 50%;
+    min-width: 20%;
+    height: auto;
+    position: absolute;
+    top: 10%;
+    right: 2%;
+  }
+
+  .header-block .text {
+    position: absolute;
+    bottom: 35%;
+    left: 8%;
+  }
+  
+  .header-block .text h2, .text p {
+    font-size: 38px;
+    color: var(--darkpink);
+    transform: translateX(-20px);
+    transition: transform 3s;
+  }
+  
+  .header-block .text p {
+    font-size: 30px;
+  }
+
+  .header-block .text button {
+    border: 2px solid var(--darkpink);
+    margin-top: 20px;
+    margin-left: -20px;
+    align-self: auto;
+    padding: 20px 40px;
+    background: transparent;
+    color: var(--darkpink);
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 25px;
+  }
+
+.header-block .text button:hover {
+    background: var(--darkpink);
+    color: var(--white);
+    transform: translateX(20px);
+    transition: transform 0.5s;
+  }
+
+.socialmedias {
+    margin-top: 10%;
+    padding-left: 40%;;
+    position: center;
+    display: block;
+    transform: translateX(-20px);
+    transition: transform 1.5s;
+  }
+
+  .instagram,.tiktok, .spotify, .deezer, .soundcloud, .youtube {
+    width: 60;
+    height: 60;
+}
+
+.instagram:hover,.tiktok:hover, .spotify:hover, .deezer:hover, .soundcloud:hover, .youtube:hover {
+  width: 60;
+  height: 60;
+  background-color: var(--pink);
+  border-radius: 50%;
+  border: 5px solid var(--white);
+}
+
+
+.showarea .shows {
+  height: 450px;
+  background: var(--darkpink);
+  position: relative;
+  padding: 10px;
+}
+
+  .Widget {
+  max-width: 750;
+  height: auto;
+  margin-left: 40%;
+  padding: 10px;
+  background-color: var(--white);
+  border-radius: 10px;
+  transform: translateX(-20px);
+  transition: transform 1.5s;
+}
+
+.WidgetStyle{
+  overflow:hidden;  
+  width:100%;
+  height: 580px;
+}
+
+.shows .textarea {
+  position: absolute;
+  text-align: center;
+  bottom: 35%;
+  left: 10%;
+  transform: translateX(-20px);
+  transition: transform 1.5s;
+}
+
+.shows .textarea h2 {
+  text-align: center;
+  font-size: 38px;
+  color: var(--white);
+}
+
+  .shows .textarea p {
+  font-size: 30px;
+  color: var(--white)
+}
+
+.shows .textarea button {
+  border: 2px solid var(--white);
+  margin-top: 20px;
+  padding: 20px 40px;
+  background: transparent;
+  color: var(--white);
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 25px;
+}
+
+.textarea button:hover {
+  background-color: var(--white);
+  color: var(--darkpink);
+}
+
+.aboutarea {
+  height: 450px;
+  background: var(--darkpink);
+  position: relative;
+  padding: 10px;
+  top: 5%;
+}
+
+.aboutarea .about {
+  position: absolute;
+  bottom: 35%;
+  left: 38%;
+}
+
+.aboutarea .aboutimg {
+  width: 350;
+  height: auto;
+  margin-left: 10%;
+  margin-bottom: 10%;
+}
+
+.aboutarea .about h2 {
+  text-align: center;
+  font-size: 38px;
+  color: var(--white);
+}
+
+.aboutarea .about p {
+  text-align: center;
+  font-size: 30px;
+  color: var(--white);
+}
+
+.aboutarea, .showarea {
+    margin-top: 5%;
+}
+
+.footertext p {
+  text-align: center;
+  color: var(--white);
+}
